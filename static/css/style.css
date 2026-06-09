@@ -162,4 +162,51 @@ table {
 
 th, td {
   padding: 8px 0;
-  text-
+  text-align: left;
+  border-bottom: 1px solid var(--border-color);
+}
+
+th {
+  color: var(--text-muted);
+  font-weight: 500;
+  font-size: 12px;
+}
+
+td {
+  color: var(--text-main);
+}
+
+tr.selected td {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+code {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 12px;
+  color: #9cdcfe;
+  line-height: 1.5;
+  margin: 0;
+  white-space: pre-wrap;
+}
+
+.system-footer {
+  background-color: var(--bg-panel);
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.stats-group {
+  display: flex;
+  gap: 16px;
+}
+
+.stat-item span {
+  color: var(--success);
+  font-weight: 600;
+}
